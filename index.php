@@ -16,23 +16,24 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
     <title>Document</title>
 </head>
 <body>
-   <form>
-        <!-- nome -->
-        <label for="username">Nome</label>
-        <input type="text" id="username" name="username">
+    
+   <form action="request.php" method="GET">
+
+        <!-- Inserisci una frase  -->
+        <label for="phrase">Inserisci una frase</label>
+        <input type="text" id="phrase" name="phrase">
         <br>
-        <!-- cognome -->
-        <label for="surname">Cognome</label>
-        <input type="text" id="surname" name="surname">
+        <!-- censered -->
+        <label for="censored">Quale parola vuoi nascondere?</label>
+        <input type="text" id="censored" name="censored">
         <br>
-        <!-- mail -->
-        <label for="e_mail">E-mail</label>
-        <input type="text" id="e_mail" name="e_mail">
 
         <hr>
         <!-- buttons -->
         <button type="submit">Invia</button>
         <button type="reset">Cancella</button>
+
    </form>
+
 </body>
 </html>
